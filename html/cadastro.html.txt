@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cadastre-se para ser voluntário ou doador da ONG Vida Melhor.">
+  <title>Cadastro - ONG Vida Melhor</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header>
+    <img src="imagens/logo.png" alt="Logo da ONG Vida Melhor" class="logo">
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="cadastro.html">Cadastro</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h1>Cadastro de Voluntário / Doador</h1>
+      <form id="formCadastro">
+        <fieldset>
+          <legend>Dados Pessoais</legend>
+
+          <label>Nome Completo:</label>
+          <input type="text" name="nome" required>
+
+          <label>E-mail:</label>
+          <input type="email" name="email" required>
+
+          <label>CPF:</label>
+          <input type="text" name="cpf" id="cpf" required maxlength="14">
+
+          <label>Telefone:</label>
+          <input type="tel" name="telefone" id="telefone" required maxlength="15">
+
+          <label>Data de Nascimento:</label>
+          <input type="date" name="nascimento" required>
+
+          <label>Endereço:</label>
+          <input type="text" name="endereco" required>
+
+          <label>CEP:</label>
+          <input type="text" name="cep" id="cep" required maxlength="9">
+
+          <label>Cidade:</label>
+          <input type="text" name="cidade" required>
+
+          <label>Estado:</label>
+          <input type="text" name="estado" required maxlength="2">
+        </fieldset>
+
+        <button type="submit">Enviar Cadastro</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 ONG Vida Melhor. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,46 @@
+:root {
+  /* Paleta (8 cores) */
+  --color-primary-600: #0b4f6c;
+  --color-primary-500: #146c8b;
+  --color-primary-400: #2a9bd1;
+  --color-secondary-600: #6b4f2b;
+  --color-secondary-500: #a67c52;
+  --color-neutral-900: #0b1b1e;
+  --color-neutral-500: #6b7b7f;
+  --color-neutral-100: #f5f7f7;
+
+  /* Cores semânticas */
+  --color-success: #2e7d32;
+  --color-warning: #f9a825;
+  --color-danger:  #c62828;
+  --color-info:    var(--color-primary-400);
+
+  /* Tipografia (5 tamanhos) */
+  --font-family-sans: "Inter", system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  --fs-xxl: 32px;
+  --fs-xl: 24px;
+  --fs-lg: 18px;
+  --fs-md: 16px;
+  --fs-sm: 14px;
+
+  /* Espaçamento modular */
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --space-5: 48px;
+  --space-6: 64px;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family-sans);
+  font-size: var(--fs-md);
+  color: var(--color-neutral-900);
+  background: var(--color-neutral-100);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

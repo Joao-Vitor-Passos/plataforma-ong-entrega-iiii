@@ -1,0 +1,54 @@
+/* Breakpoints */
+:root {
+  --bp-1: 320px;
+  --bp-2: 576px;
+  --bp-3: 768px;
+  --bp-4: 992px;
+  --bp-5: 1200px;
+}
+
+/* Container principal */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-2);
+}
+
+/* Grid 12 colunas */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--space-2);
+}
+
+.col-4 { grid-column: span 4; }
+.col-6 { grid-column: span 6; }
+.col-12 { grid-column: span 12; }
+
+/* Layout do header */
+header {
+  background: white;
+  border-bottom: 1px solid #e6eaeb;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-2) 0;
+}
+
+main {
+  padding: var(--space-4) 0;
+}
+
+footer {
+  background: #f1f4f4;
+  padding: var(--space-3) 0;
+  text-align: center;
+  border-top: 1px solid #e6eaeb;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Projetos sociais e oportunidades de voluntariado da ONG Vida Melhor.">
+  <title>Projetos - ONG Vida Melhor</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <img src="imagens/logo.png" alt="Logo da ONG Vida Melhor" class="logo">
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="cadastro.html">Cadastro</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h1>Nossos Projetos</h1>
+      <article>
+        <h2>Educação para Todos</h2>
+        <img src="imagens/projeto1.jpg" alt="Crianças estudando em projeto de educação">
+        <p>Oferecemos aulas de reforço escolar e inclusão digital para jovens em vulnerabilidade social.</p>
+      </article>
+
+      <article>
+        <h2>Alimente o Futuro</h2>
+        <img src="imagens/doacao.jpg" alt="Distribuição de alimentos">
+        <p>Campanha de arrecadação de alimentos para famílias em situação de fome.</p>
+      </article>
+
+      <article>
+        <h2>Voluntariado</h2>
+        <img src="imagens/voluntario.jpg" alt="Voluntários em ação">
+        <p>Junte-se a nós! Envolva-se em projetos e faça a diferença.</p>
+        <a href="cadastro.html" class="botao">Inscreva-se como voluntário</a>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 ONG Vida Melhor. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
