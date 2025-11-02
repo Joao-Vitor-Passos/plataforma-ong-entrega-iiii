@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ONG Vida Melhor</title>
+  <link rel="stylesheet" href="../css/design-system.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/dark-mode.css">
+  <!-- style.min.css será carregado em produção -->
+  <meta name="description" content="Plataforma da ONG Vida Melhor — conectando voluntários e projetos.">
+</head>
+<body>
+  <a class="skip-link" href="#main" aria-label="Pular para o conteúdo principal">Pular para o conteúdo</a>
+
+  <header role="banner" class="site-header">
+    <div class="container header-inner">
+      <a href="#" id="logo" aria-label="Página inicial">
+        <img src="../imagens/logo.png" alt="Logotipo ONG Vida Melhor" class="logo" />
+      </a>
+
+      <nav role="navigation" aria-label="Menu principal" class="nav" id="main-nav">
+        <ul>
+          <li><a href="#" data-page="home" role="link" tabindex="0">Início</a></li>
+          <li class="dropdown" tabindex="0" aria-haspopup="true" aria-expanded="false">
+            <a href="#" data-page="projetos" role="link">Projetos</a>
+            <ul class="submenu" role="menu" aria-label="Submenu projetos">
+              <li role="none"><a role="menuitem" href="#" data-page="projetos" tabindex="-1">Ações Sociais</a></li>
+              <li role="none"><a role="menuitem" href="#" data-page="cadastro" tabindex="-1">Cadastre-se</a></li>
+            </ul>
+          </li>
+          <li><a href="#" data-page="cadastro" role="link" tabindex="0">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button id="btn-contrast" class="btn btn--ghost" aria-pressed="false" aria-label="Ativar alto contraste">Alto contraste</button>
+        <button id="btn-theme" class="btn btn--ghost" aria-pressed="false" aria-label="Alternar modo escuro">Modo escuro</button>
+        <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-controls="mobile-nav" aria-expanded="false">
+          <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobile-nav" class="mobile-nav" aria-hidden="true"></div>
+  </header>
+
+  <main id="main" role="main" tabindex="-1" class="container" aria-live="polite">
+    <!-- Conteúdo dinâmico carregado aqui pela SPA -->
+    <div id="app" aria-live="polite"></div>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="container">
+      <p>© 2025 ONG Vida Melhor — Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- scripts (em produção carregue app.min.js) -->
+  <script type="module" src="../js/app.js"></script>
+</body>
+</html>

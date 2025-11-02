@@ -1,0 +1,23 @@
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Node e dependências (caso use no futuro)
+node_modules/
+
+# Arquivos de build ou minificados (mantém só originais)
+*.min.css
+*.min.js
+
+# Arquivos temporários
+*.log
+*.tmp
+.vscode/
+.idea/
+
+# Backup
+*.bak
+*.old
+
+# Ambiente
+.env

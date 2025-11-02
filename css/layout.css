@@ -1,54 +1,27 @@
-/* Breakpoints */
-:root {
-  --bp-1: 320px;
-  --bp-2: 576px;
-  --bp-3: 768px;
-  --bp-4: 992px;
-  --bp-5: 1200px;
+/* breakpoints */
+@media (min-width: 1600px) { :root { --container-max-width: 1400px; } }
+
+/* Header layout */
+header { background: #fff; border-bottom: 1px solid #e6eaeb; position: sticky; top: 0; z-index: 50; }
+.header-inner { display:flex; align-items:center; justify-content:space-between; gap: var(--space-3); padding: var(--space-2) 0; }
+
+/* Nav */
+.nav ul { list-style:none; margin:0; padding:0; display:flex; gap: var(--space-3); align-items:center; }
+.nav a { padding: calc(var(--space-1)); border-radius:8px; display:inline-block; }
+.nav a:hover, .nav a:focus { background: color-mix(in srgb, var(--color-primary-500) 8%, transparent); }
+
+/* mobile */
+@media (max-width: 768px) {
+  .nav { display:none; }
+  .hamburger { display:inline-flex; }
+  .mobile-nav { display:none; position:absolute; top:72px; left:0; right:0; background:white; box-shadow:0 12px 30px rgba(0,0,0,0.08); padding: var(--space-2); }
+  .mobile-nav.show { display:block; }
 }
 
-/* Container principal */
-.container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 var(--space-2);
-}
+/* Main */
+main { padding: var(--space-4) 0; }
+.hero { display:grid; grid-template-columns: 1fr 480px; gap: var(--space-4); align-items:center; }
+@media (max-width: 992px) { .hero { grid-template-columns: 1fr; } }
 
-/* Grid 12 colunas */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  gap: var(--space-2);
-}
-
-.col-4 { grid-column: span 4; }
-.col-6 { grid-column: span 6; }
-.col-12 { grid-column: span 12; }
-
-/* Layout do header */
-header {
-  background: white;
-  border-bottom: 1px solid #e6eaeb;
-  position: sticky;
-  top: 0;
-  z-index: 50;
-}
-
-.header-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: var(--space-2) 0;
-}
-
-main {
-  padding: var(--space-4) 0;
-}
-
-footer {
-  background: #f1f4f4;
-  padding: var(--space-3) 0;
-  text-align: center;
-  border-top: 1px solid #e6eaeb;
-}
+/* Footer */
+footer { background: #f1f4f4; padding: var(--space-3) 0; border-top:1px solid #e6eaeb; text-align:center; }

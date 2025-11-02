@@ -1,27 +1,9 @@
-import { getTemplate } from './templates.js';
-import { validarFormulario } from './formValidation.js';
+import { initRouter } from './router.js';
+import { initUI } from './uiAccessibility.js';
+import { initStorage } from './storage.js';
 
-const content = document.getElementById('content');
-const links = document.querySelectorAll('a[data-page]');
-
-function loadPage(page) {
-  content.innerHTML = getTemplate(page);
-
-  if (page === 'contato') {
-    const form = document.querySelector('form');
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-      validarFormulario(form);
-    });
-  }
-}
-
-links.forEach(link => {
-  link.addEventListener('click', (e) => {
-    e.preventDefault();
-    const page = e.target.dataset.page;
-    loadPage(page);
-  });
+document.addEventListener('DOMContentLoaded', () => {
+  initStorage();
+  initUI();          // hamburger, theme toggle, keyboard behaviors
+  initRouter();      // SPA router (carrega templates, validação)
 });
-
-loadPage('home');

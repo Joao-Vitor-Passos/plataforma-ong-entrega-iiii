@@ -1,0 +1,7 @@
+body.dark-mode {
+  background: #071018;
+  color: #e6f6ff;
+}
+body.dark-mode header { background:#04121a; border-bottom: 1px solid rgba(255,255,255,0.06); }
+body.dark-mode .card { background: #0b1b25; box-shadow: none; border: 1px solid rgba(255,255,255,0.02); }
+body.dark-mode .btn { background: var(--color-primary-400); color: #00131a; }
